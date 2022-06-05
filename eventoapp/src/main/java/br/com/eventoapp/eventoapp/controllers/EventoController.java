@@ -16,30 +16,30 @@ public class EventoController {
     private EventoRepository er;
 
     @RequestMapping(value = "/cadastrarEvento", method = RequestMethod.GET)
-    public String form(){
+    public String form() {
         return "evento/formEvento";
     }
 
     @RequestMapping(value = "/cadastrarEvento", method = RequestMethod.POST)
-    public String form(Evento evento){
+    public String form(Evento evento) {
         er.save(evento);
         return "redirect:/cadastrarEvento";
     }
 
     @RequestMapping("/eventos")
-    public ModelAndView listaEventos(){
+    public ModelAndView listaEventos() {
         ModelAndView mv = new ModelAndView("index");
 
         Iterable<Evento> eventos = er.findAll();
-        mv.addObject("eventos",eventos);
+        mv.addObject("eventos", eventos);
         return mv;
     }
 
     @RequestMapping("/{codigo}")
-    public ModelAndView detalhesEvento(@PathVariable("codigo") long codigo){
+    public ModelAndView detalhesEvento(@PathVariable("codigo") long codigo) {
         Evento evento = er.findByCodigo(codigo);
         ModelAndView mv = new ModelAndView("evento/detalhesEvento");
-        mv.addObject("evento",evento);
+        mv.addObject("evento", evento);
         return mv;
     }
 }
