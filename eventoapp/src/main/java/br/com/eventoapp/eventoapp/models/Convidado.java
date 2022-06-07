@@ -1,23 +1,29 @@
 package br.com.eventoapp.eventoapp.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-
-
+import javax.persistence.*;
 
 
 @Entity
 public class Convidado {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long codigo;
+
+
     private String rg;
 
     private String nomeConvidado;
 
     @ManyToOne
     private Evento evento;
+    public long getCodigo() {
+        return codigo;
+    }
 
+    public void setCodigo(long codigo) {
+        this.codigo = codigo;
+    }
     public String getRg() {
         return rg;
     }

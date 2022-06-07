@@ -1,7 +1,5 @@
 package br.com.eventoapp.eventoapp.models;
 
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
