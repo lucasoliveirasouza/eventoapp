@@ -1,4 +1,4 @@
-# eventoapp
+# Eventoapp
 
 #### Contatos:
 
@@ -13,5 +13,5 @@
 <img align="center" title="Java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"> <img align="center" title="Spring" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg"> <img align="center" title="MySql" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
 
 ### Descrição:
-Esse sistema foi desenvolvido para criar eventos onlines e listas de convidados associados a cada evento. <br>
+Esse sistema foi desenvolvido para criar eventos onlines e listas de convidados associados a cada evento. Nele é possível listar, cadastrar e deletar um evento. Também é possível realizar as três ações para o Convidado<br>
 O intuito desse projeto foi começar os estudo da framework Spring Boot, fazendo uso do MYSQL como repositório. <br>
