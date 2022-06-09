@@ -14,4 +14,4 @@
 
 ### Descrição:
 Esse sistema foi desenvolvido para criar eventos onlines e listas de convidados associados a cada evento. <br>
-O intuito dess projeto foi começar os estudo na framework Spring Boot, fazendo uso do MYSQL como repositório. <br>
+O intuito desse projeto foi começar os estudo da framework Spring Boot, fazendo uso do MYSQL como repositório. <br>
